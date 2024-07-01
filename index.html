@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Report By Ishan Puri</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            width: 60%;
+            margin: auto;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .nav-buttons button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .nav-buttons button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="content">
+        <!-- Content will be inserted here dynamically -->
+    </div>
+    <div class="nav-buttons">
+        <button id="prev" onclick="navigate(-1)" disabled>Previous</button>
+        <button id="next" onclick="navigate(1)">Next</button>
+    </div>
+    <footer>
+        Coded by Ishan Puri IX B
+    </footer>
+
+    <script>
+        const pages = [
+            `
+            <h1>Introduction</h1>
+            <p>"The Hungry Tide" by Amitav Ghosh tells a thrilling story of adventure, surprise love, and identity in the charming Sundarbans off India's east coast. This dense mangrove maze makes the perfect backdrop for Piya Roy, a marine biologist from Seattle studying Irrawaddy dolphins. She partners with Kanai Dutt, a charming yet cocky translator from New Delhi, who stumbles upon a mysterious notebook from his late uncle, revealing secrets about the region's history.</p>
+            <p>Their journey crosses paths with Fokir, an uneducated but insightful fisherman, as they tackle cultural clashes and the conflict between modernity and tradition. Amitav Ghosh, born in Kolkata in 1956 and known for his intricate storytelling and rich historical contexts, blends personal stories with bigger themes to win various literary awards. "The Hungry Tide" superbly delves into the profound connections between human lives and the natural world.</p>
+            `,
+            `
+            <h1>About the Author</h1>
+            <p>Amitav Ghosh was born in Kolkata in 1956. He's a great Indian writer known for his detailed stories and deep historical backgrounds. He went to school in India and the UK, getting degrees from Delhi University and Oxford. Ghosh's books, like "The Shadow Lines," "The Glass Palace," and "The Ibis Trilogy," mix personal stories with big social-political topics. His writing looks at history, culture, and who we are. Ghosh has won lots of awards, like the Jnanpith Award and the Sahitya Akademi Award, making him a top writer today.</p>
+            `,
+            `
+            <h1>Plot Summary</h1>
+            <p>"The Hungry Tide" is a book by Amitav Ghosh that tells the story in the Sundarbans, which is a big forest of mangroves in the Bay of Bengal. The main characters are Piya Roy, a scientist from Seattle studying Irrawaddy dolphins there, and also Kanai Dutt, an interpreter from New Delhi, and Fokir, a fisherman who knows the place well.</p>
+            <p>Fokir helps Piya navigate the tricky waters and complex ecosystem of the Sundarbans. Even though they come from different backgrounds, their relationship gets more tangled because of cultural differences and the tough life in the area. The book looks at how modern life clashes with tradition and shows how hard it is to survive in such a harsh place. It highlights how Piya's science work doesn't always match up with the traditional ways of the people living in the Sundarbans.</p>
+            <p>At the same time, Kanai tries to deal with his family's history and what he finds out from a notebook left by his uncle who has passed away. As they move through their pasts and explore this changing landscape, all three characters have to face who they truly are and what they want out of life. "The Hungry Tide" paints a vivid picture of nature's beauty and its brutal side while touching on themes like love, loss, and being strong when times get tough.</p>
+            `,
+            `
+            <h1>My Analysis</h1>
+            <p>"The Hungry Tide" by Amitav Ghosh is rich in themes such as the intersection of nature and humanity, the clash between tradition and modernity, and the complexity of identity. The Sundarbans itself is a powerful symbol, representing both the beauty and danger of nature. The ever-changing tides mirror the unpredictability of life and the fluid nature of identity.</p>
+            <p>The characters embody contrasting worlds: Piya represents scientific rationality and modernity, while Fokir symbolizes a deep, intuitive connection to nature. Kanai serves as a bridge between these realms, grappling with his intellectual arrogance and the emotional legacy of his family.</p>
+            <p>Ghosh uses vivid imagery and detailed descriptions to bring the Sundarbans to life, emphasizing its role as a character in its own right. Water flows through the story, symbolizing survival, change, and nature's unstoppable power. Ghosh weaves a tale that is both a compelling adventure and a profound meditation on human existence.</p>
+            `,
+            `
+            <h1>Conclusion</h1>
+            <p>Amitav Ghosh's "The Hungry Tide" tells several stories ranging from the mythological and historical to fictional and natural across different time zones. People with varied ambitions and outlook reach there, settle, and depart. Nirmal, who dreamt of revolution all his life, at least had its foretaste during his dying hours in the uprising staged by the settlers in the tide country. Nilima, his wife, found the true meaning of her life in serving the deprived in Lusibari where all the central characters head to. For Piya Roy, the cetologist from America, the place is initially a research ground but later it provides an opportunity to get rid of her guilt feeling by extending generous support to Fokir's widow and his son. Even the ever-ambitious and self-centered Kanai Dutt is likely to purge some of his undesirable elements during his proposed third visit to the place. But along with the flora and fauna, it is the likes of Fokir who are the true inheritors of the simple glories of the mangrove lands in the Sundarbans. It is no wonder that Fokir is the only one who knows the unique details of the Irrawaddy dolphins. Like the dolphin, he is also mute before Piya and is more alive in water than on land. Piya's research of the dolphin runs parallel to her attempt to understand Fokir.</p>
+            <p>"The Hungry Tide," despite its weary length in certain places and the sudden rounded-off end where too many things happen in too short a time, is a wonderful novel that explores the riches of fluctuations of human destiny.</p>
+            `
+        ];
+
+        let currentPage = 0;
+
+        function navigate(direction) {
+            currentPage += direction;
+            document.getElementById('content').innerHTML = pages[currentPage];
+            document.getElementById('prev').disabled = currentPage === 0;
+            document.getElementById('next').disabled = currentPage === pages.length - 1;
+        }
+
+        // Initial load
+        navigate(0);
+    </script>
+</body>
+</html>
